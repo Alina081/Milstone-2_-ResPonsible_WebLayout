@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html5_SemanticTags_Audio_video_Table_Form</title>
+
+    <!---Css Sheet-->
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 3px solid rgb(119, 25, 25);
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exploring Html5</h1>
+    <audio src="Media/Audio/herd-of-goats-19615.mp3" controls></audio>
+    <br><br>
+    <video src="Media/Video/demo.mp4" controls width="500"></video>
+
+    <br> <br>
+
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/_uQrJ0TkZlc?si=HmwM_KIlB2_KTZfM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1> <b>Start Semantic Tags</b></h1>
+
+    <div class="header">
+        <nav>
+            <a href="">link-1</a>
+            <a href="">link-2</a>
+            <a href="">link-3</a>
+            <a href="">link-4</a>
+        </nav>
+        <h1>Welcome to my website</h1>
+        <h2>My blog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit at deserunt natus enim suscipit, accusamus
+            magnam eius temporibus accusantium eligendi beatae quisquam, quod dolorum! Iusto ullam accusantium deleniti
+            veniam esse.</p>
+    </div>
+
+    <!--.blog*4>h3{my blog-$}+p>lorem50-->
+
+    <main>
+        <section class="blog">
+            <h2>read my blog</h2>
+
+            <article class="blog">
+                <h3>my blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut consequatur suscipit
+                    inventore
+                    enim vero debitis, saepe deleniti perspiciatis ducimus architecto officiis porro ea eius quisquam
+                    illo
+                    accusamus dolorem ut! Velit consequuntur dolorum tempora aperiam repellat, consequatur, expedita
+                    laborum
+                    odit nesciunt provident impedit sed ducimus exercitationem nobis molestias, qui molestiae!</p>
+
+            </article>
+            <div class="blog">
+                <h3>my blog-2</h3>
+                <p>Rem fugiat quia dolorum voluptate assumenda omnis asperiores a! Eum iusto natus perspiciatis ipsa
+                    eveniet
+                    tempora maxime officia unde labore! Magni quo delectus mollitia sit nobis cupiditate est, rem eum,
+                    reprehenderit cum animi unde natus distinctio voluptates ea voluptas? Accusamus quisquam rerum
+                    consectetur adipisci, sit delectus veniam atque? Magni, nulla?</p>
+            </div>
+            <div class="blog">
+                <h3>my blog-3</h3>
+                <p>Aspernatur sit, facere asperiores nesciunt libero dolore perferendis veritatis esse maxime porro hic
+                    quo
+                    rem iste consequuntur illo recusandae sed! Nemo voluptatem quis tempore aliquam libero consequatur,
+                    odit
+                    placeat sed accusantium suscipit ipsum aspernatur deserunt assumenda illum recusandae cupiditate
+                    corporis consequuntur incidunt illo, nam quae repellat vel quisquam? Sunt, suscipit?</p>
+            </div>
+            <div class="blog">
+                <h3>my blog-4</h3>
+                <p>Quibusdam ex dicta nihil quae ipsa libero possimus vel provident eius, pariatur voluptates deserunt,
+                    assumenda molestias voluptatem nemo unde non animi praesentium nam quos exercitationem similique
+                    deleniti facere. Cupiditate id corporis eum incidunt quos aliquid dolorem dignissimos voluptate
+                    magnam
+                    velit nemo tempora, rerum sit beatae necessitatibus assumenda culpa obcaecati. Officiis!</p>
+            </div>
+
+
+        </section>
+
+        <section>
+            <h3>Photo Album</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consectetur nihil quod repellat nisi
+                voluptatem, mollitia quia quo cum velit id dolore veritatis, iste, dicta reiciendis! Aliquam
+                exercitationem
+                est impedit.</p>
+        </section>
+    </main>
+
+    <br><br><br>
+
+    <h1>Creating Table</h1>
+
+    <!--Table Row(tr)
+        Table Data(td)-->
+
+    <table>
+
+        <!---Table Head(thead)-->
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <!---Table body(tbody)-->
+
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Microsoft</td>
+                <td>$1000</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Apple</td>
+                <td>$1200</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zukuerbug</td>
+                <td>Facebook</td>
+                <td>$1300</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <section>
+        <h1>Creating From....</h1>
+        <form action="">
+            <p><input type="text" name="name" placeholder="Enter Your Name" id=""></p>
+
+            <p><input type="text" name="email" placeholder="Enter YourEmail" id=""></p>
+
+            <fieldset>
+                <legend>select your item</legend>
+                <p><label for="Cake">
+                        <input type="radio" name="dfood" id="Cake"> Cake</label>
+                </p>
+
+                <p><label for="Dryfood">
+                        <input type="radio" name="dfood" id="Dryfood"> Dryfood</label>
+                </p>
+
+                <p><label for="Dates">
+                        <input type="radio" name="dfood" id="Dates">Dates
+                    </label>
+                </p>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>
+                    Select Salad Item </legend>
+
+                <p><label for="Cashewnut">
+                        <input type="checkbox" name="salad" id="Cashewnut">Cashewnut Salad
+                    </label>
+                </p>
+
+                <p><label for="Cheaseed">
+
+                        <input type="checkbox" name="salad" id="Cheaseed">Cheaseed Salad
+
+                </p>
+
+                </label>
+
+                <p><label for="Cucumber">
+                        <input type="checkbox" name="salad" id="Cucumber">Cucumber Salad
+                </p>
+
+                </label>
+
+            </fieldset>
+
+            <br><br>
+
+            <p>Special Instuction
+
+                <br> <br>
+                <textarea rows="10" cols="" 30></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <center><b>copyright @2029</b></center>
+    </footer>
+</body>
+
+</html>
